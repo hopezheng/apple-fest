@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ithaca Apple Harvest Festival</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css" media="all" />
+
+  <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
+  <script src="scripts/validation.js" type="text/javascript" async></script>
+</head>
+
+<body>
+  <div class="header">
+    <header id="header">
+      <!-- Source: https://wallpaperaccess.com/full/1259313.jpg -->
+      <!-- <img src="images/applesbg.jpg" alt="Apples image"> -->
+      <h1><a href="index.html">Ithaca Apple Harvest Festival</a></h1>
+      <p>Fri. September 28 — Sun. September 30</p>
+      <cite>Image source: <a href="https://wallpaperaccess.com/full/1259313.jpg">wallpaperaccess.com</a></cite>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Things to Do & See</a></li>
+        <li><a href="about.html#history">History</a></li>
+        <li><a href="directions.html">Directions & Parking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Sources: https://ithacavoice.com/2019/09/apple-harvest-festival-guide-2019-getting-back-to-the-roots/, https://stories.visitithaca.com/apple-harvest-festival -->
+    <h4>Join us in Downtown Ithaca for a weekend of all things apple!</h4>
+
+      <p>Live music, fresh fruit, handmade crafts and sweet treats - the annual Ithaca Apple Harvest Festival is the perfect introduction to our Region’s rich agricultural, culinary, and artistic bounties. Ithaca’s rural landscape has a long history grounded in farms and fruit orchards, and our community has been celebrating it for decades: 2020 marks the 38th annual Apple Harvest Festival.</p>
+      <p>With live concerts, children’s games, and cider, beer, and wine tastings, all weekend long there’s something at the festival for people of all ages to enjoy!</p>
+      <cite>Sources: <a href="https://ithacavoice.com/2019/09/apple-harvest-festival-guide-2019-getting-back-to-the-roots/">The Ithaca Voice</a>, <a href="https://stories.visitithaca.com/apple-harvest-festival">Visit Ithaca</a></cite>
+
+    <p><a href="about.html">Click here to learn more about our vendors, events, performances, and more!</a></p>
+
+    <figure class="blockimg">
+      <!-- Source: https://stories.visitithaca.com/apple-harvest-festival -->
+      <img src="images/stview.jpg" alt="Apple Harvest Festival street view">
+
+      <figcaption><cite>Source: <a href="https://stories.visitithaca.com/apple-harvest-festival">Visit Ithaca</a></cite></figcaption>
+    </figure>
+
+    <div class="form">
+      <h3>Give Us Feedback for a Chance to Win!</h3>
+      <p>Already attended the festival? Loved it, hated it? Tell us your thoughts in the feedback form below for a chance to win a <strong>$30 gift voucher</strong> spendable at <strong>next year's Apple Festival</strong> or at <strong>any participating Ithaca store or restaurant</strong> (expiry time: one year)! When you submit this form, you'll be automatically entered in a raffle to win. Enter by October 8th. Winners will be notified by email on October 10th!</p>
+      <h5>*required</h5>
+
+      <form id="feedbackForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
+
+        <div class="inlineLabelComponent">
+          <div class="reqLabel">
+            <label for="userName">Name:</label>
+            <abbr title="required">*</abbr>
+          </div>
+
+          <div class="feedbackTop">
+            <div id="nameFeedback" class="formFeedback hidden">Please enter your name.</div>
+
+            <input type="text" id="userName" name="userName" required/>
+          </div>
+        </div>
+
+        <div class="inlineLabelComponent">
+          <div class="reqLabel">
+            <label for="userEmail">Email:</label>
+            <abbr title="required">*</abbr>
+          </div>
+
+          <div id="feedbackComponentPair" class="feedbackTop">
+            <div id="emailFeedback" class="formFeedback hidden">Please enter a valid email.</div>
+
+            <input type="email" id="userEmail" name="userEmail" required/>
+          </div>
+        </div>
+
+        <ol>
+          <li>
+            <div class="labelComponentPair">
+              <label>What day(s) did you attend the festival?</label>
+              <abbr title="required">*</abbr>
+
+              <div id="dayFeedback" class="formFeedback hidden">Please select at least one day.</div>
+
+              <div class="labelCheckboxGroup">
+                <div class="labelCheckboxPair">
+                  <input type="checkbox" id="fri" name="fri"/>
+                  <label for="fri">Friday</label>
+                </div>
+
+                <div class="labelCheckboxPair">
+                  <input type="checkbox" id="sat" name="sat"/>
+                  <label for="sat">Saturday</label>
+                </div>
+
+                <div class="labelCheckboxPair">
+                  <input type="checkbox" id="sun" name="sun"/>
+                  <label for="sun">Sunday</label>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="labelComponentPair">
+              <label>What time(s) did you attend?</label>
+              <abbr title="required">*</abbr>
+
+              <div id="timeFeedback" class="formFeedback hidden">Please select at least one time.</div>
+
+              <div class="labelCheckboxGroup">
+                <div class="labelCheckboxPair">
+                  <input type="checkbox" id="morn" name="morn"/>
+                  <label for="morn">Morning</label>
+                </div>
+
+                <div class="labelCheckboxPair">
+                  <input type="checkbox" id="aft" name="aft"/>
+                  <label for="aft">Afternoon</label>
+                </div>
+
+                <div class="labelCheckboxPair">
+                  <input type="checkbox" id="eve" name="eve"/>
+                  <label for="eve">Evening</label>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="textArea">
+              <div>
+                <label for="userExp">How was your overall experience of the festival?</label>
+                <abbr title="required">*</abbr>
+              </div>
+
+              <div id="expFeedback" class="formFeedback hidden">Please tell us about your experience in a few words or more.</div>
+
+              <textarea id="userExp" name="userExp" required></textarea>
+            </div>
+          </li>
+
+          <li>
+            <div class="textArea">
+              <label for="userFav">What was your favorite part?</label>
+              <textarea id="userFav" name="userFav"></textarea>
+            </div>
+          </li>
+
+          <li>
+            <div class="textArea">
+              <label for="userFuture">Is there anything you would like to see or change at future festivals? Any extra comments?</label>
+              <textarea id="userFuture" name="userFuture"></textarea>
+            </div>
+          </li>
+        </ol>
+
+        <button type="submit" class="submit">Submit</button>
+
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <figure class="blockimg">
+        <!-- Source: http://www.cityofithaca.org/civicalerts.aspx?AID=562 -->
+        <img src="images/ithacalogo.png" alt="City of Ithaca logo">
+        <figcaption><cite>Source: <a href="http://www.cityofithaca.org/civicalerts.aspx?AID=562">www.cityofithaca.org</a></cite></figcaption>
+      </figure>
+
+      <p>City of Ithaca - New York</p>
+    </div>
+
+    <p><a href="#header">Back to Top</a></p>
+  </footer>
+
+</body>
+
+</html>
